@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head> 
+<link rel = "stylesheet" href = "/static/css/contact.css"/>
+      </head>
+<body>
+  <div class="look">
+  <div class= "contact">
+    <p1> <b>profile </b></p> </div>
+  <p> User profile </p>
+    <form action="{{url_for('profile')}}" method= "POST"> 
+   <br> <div class="p1"> username: </div>
+    <p>Please create your username </p>
+      <input type="text" name="username"> <br>
+  </ul>
+
+      <img src={{curr_image}}>
+       <ul>
+        <li>Today is: {{time}}</li>
+         <li>image: {{curr_image}}
+        <li>Userame: {{curr_user}}</li>
+        <li>Email: {{curr_email}}</li>
+        <li>ID: {{curr_id}}</li>
+      </ul>
+   
+    
+    <input type= "submit" value="send">
+    <!---  <td> {{username.id}}</td><a href="/profiles/{{ username.id}}">{{username.username}}</a>  --->
+  </form>
+  </div>
+</body>
+</html>

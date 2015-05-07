@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head> 
+<link rel = "stylesheet" href = "/static/css/contact.css"/>
+      </head>
+<body>
+  <div class="look">
+  <div class= "contact">
+    <p1> <b>profile list </b></p> </div>
+  <p> User profile Listing </p>
+    
+    {% block js %} {%endblock %} {% block main %}
+    {% for x in profiles %}
+    {{x}}
+    <br>
+    {% endfor %}
+     {%endblock%}
+     
+      
+ 
+  </div>
+</body>
+</html>

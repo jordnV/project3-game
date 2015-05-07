@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head> 
+<link rel = "stylesheet" href = "/static/css/contact.css"/>
+      </head>
+<body>
+  <div class="look">
+  <div class= "contact">
+    <p1> <b>CONTACT FORM </b></p> </div>
+  <p> fill in this form to sign up </p>
+    <form action="{{url_for('contact')}}" enctype="multipart/form-data" method= "POST">
+      <br>
+      <input type ="file" name="image">
+      <br>
+       <p>Please create your username </p>
+      <input type="text" name="user_name"> <br>
+   <br> <div class="p1"> Email: </div>
+    <p>Please fill in your email address </p>
+      <input type="text" name="email"> <br>
+
+    <br> <div class="p1"> Password: </div>
+    <p>Please fill in your password  </p>
+      <input type="password" name="password"> <br>
+    
+    <input type= "submit" value="send">
+      
+  </form>
+  </div>
+</body>
+</html>
